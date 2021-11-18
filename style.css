@@ -326,51 +326,77 @@ margin-bottom: 10px;
   height: 100%;
   /*Gjemmer menyen når du ikke har trykket på knappen*/
   width: 0%;
+  /*Gjør at den alltid er på samme plass. Selvom du scroller*/
   position: fixed;
-  z-index: 1;
+  /*Velger topp*/
   top: 0;
+  /*Velger bunn*/
   left: 0;
-  background-color: #111;
+  /*Endrer bakgrunnsfargen til svart*/
+  background-color: #000;
+  /*Gjemmer menyen, helt til du åpner den*/
   overflow-x: hidden;
-  transition: 0.5s;
+  /*Hvor lang til det skal ta før menyen er helt åpen*/
+  transition: 0.7s;
+  /*Endrer padding*/
   padding-top: 60px;
 }
 
+/*Endrer linkene i menyen*/
 .sidebar a {
+  /*Endrer padding*/
   padding: 8px 8px 8px 32px;
+  /*Gjør til at linkene ikke får dekorasjon (Strek under)*/
   text-decoration: none;
+  /*Endrer tekststørrelse*/
   font-size: 25px;
+  /*Endrer tekstfarge*/
   color: #818181;
+  /*legger alt i en blokk (PÅ linje)*/
   display: block;
+  /*Hvor lang til det tar før linkene du holder over er helt markert*/
   transition: 0.3s;
 }
 
+
+/*Endrer fargen på teksten når du holder musen over til hvit*/
 .sidebar a:hover {
   color: white;
 }
 
-.sidebar .closebtn {
+
+/*Endrer x knappen*/
+.closebtn {
+/*Legger knappen på kanten*/
   position: absolute;
+  /*Bestemmer top*/
   top: 0;
+  /*Bestemmer hvor mange piksler til høyre den ligger*/
   right: 25px;
+  /*Fontstørrelse*/
   font-size: 36px;
+  /*Endrer margin til venstre*/
   margin-left: 50px;
 }
 
+/*Endrer meny knappen*/
 .openbtn {
+  /*Fontstørrelse*/
   font-size: 20px;
+  /*Velger hvordan type musepeker som skal vises, når du holder over knappen*/
   cursor: pointer;
+  /*Endrer bakgrunnsfargen til "#111" */
   background-color: #111;
+  /*Endrer tekstfargen til hvit*/
   color: white;
+  /*Endrer padding*/
   padding: 10px 15px;
+  /*Fjerner border*/
   border: none;
 }
 
+
+/*Endrer fargen når du holder over meny knappen til "#444" */
 .openbtn:hover {
   background-color: #444;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
 }
