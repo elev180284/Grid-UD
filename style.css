@@ -41,118 +41,87 @@ body{
     grid-area: L;
 }
 
-.title-wrapper {
-    grid-area: T;
-}
 
-.main-content-wrapper {
-    grid-area: M;
-}
-.articles-wrapper {
-    grid-area: A;
-}
-
+/*Velger diven "main-content-wrapperr" som er hovedinnholdet på siden*/
 .main-content-wrapper{
+  /*Gir den en plass/bokstav i griden*/
+    grid-area: M;
     display: grid;
     grid-template-columns: 1fr 1.75fr;
     grid-row: auto;
 }
-.line-decoration {
-    width: 100%;
-    height: 1px;
 
+/*Velger diven "line-decoration" som er linjen på toppen*/
+.line-decoration {
+    /*Endrer høyden*/
+    height: 1px;
+    /*Endrer fargen på linjen*/
     background-color: black;
 }
 
 
-
+  /*Velger diven "title-wrapper" som er tittelen/overskriften på siden*/
 .title-wrapper{
-    display:flex;
-    flex-direction: column;
-
+  /*Gir den en plass/bokstav i griden*/
+    grid-area: T;
+    /*Legger på padding*/
     padding: 10px 0 20px 20px;
 }
 
-.title-wrapper .title-text{
 
-    font-size:12px;
-    font-family: 'Roboto Mono',
-    monospace;
-    font-weight: 700;
-
-    /* text-align: left; */
-    text-transform: uppercase;
-    line-height:1;
-    letter-spacing: 3px;
-
-    margin: 0 0 0 10px;
-
-    color:black;
-}
-
-.title-wrapper .title-heading{
-    /* display: block; */
-
-    font-family: 'Merriweather',
-    serif;
+  /*Velger diven title-heading" som er tittelen/overskriften på siden*/
+.title-heading{
+  /*Endrer tykkelsen på teksten*/
     font-weight: 500;
+    /*Endrer størrelsen på teksten*/
     font-size:60px;
-
+    /*Endrer margin*/
     margin: 15px 0 0 0px;
+    /*Endrer letter spacing*/
     letter-spacing: 3px;
-    line-height:1;
-
-    color:black;
 }
 
-
-.tittel .tittel-heading{
-    /* display: block; */
-
-    font-family: 'Merriweather',
-    serif;
-    font-weight: 500;
-    font-size:60px;
-
-    margin: 15px 0 0 0px;
-    letter-spacing: 3px;
-    line-height:1;
-
-    color:black;
-}
-
-.main-content-wrapper .img-wrapper {
+/*Velger diven "img-wrapper" som er hovedinnholdet/bildet på siden*/
+ .img-wrapper {
+  /*Flex oppfører seg som et blokkelement*/
     display:flex;
+    /*Flytter innholdet til midten*/
     justify-content:center;
-    align-items: flex-start;
-
-    position:relative;
+    /*Legger på padding*/
     padding: 20px;
 }
-.main-content-wrapper .img-wrapper .img-container {
+
+/*Velger diven "img-container" som er hovedinnholdet/bildet på siden*/
+.img-container {
+  /*Endrer bredden*/
     width:250px;
+    /*Endrer høyden*/
     height:350px;
-    overflow:hidden;
-
+    /*Gjør at bildet flyter*/
+    overflow:visible;
+    /*Lager skygge*/
     filter:drop-shadow(0px 5px 15px #00000056);
-
+    /*Lager en overgang når du holder på bildet*/
     transition: all .2s ease ;
 }
 
-.main-content-wrapper .img-wrapper .img-container:hover {
+/*Velger diven "img-container:hover" som er hovedinnholdet/bildet på siden når du holder musen over*/
+.img-container:hover {
+  /*Overgang fra minsket til forstørret*/
     transform:scale(1.05);
-
+    /*Skyggen når forstørret*/
     filter:drop-shadow(0px 0px 10px #00000056);
 }
-.main-content-wrapper .img-wrapper .img-container .image {
+
+/*Velger diven "image" som er bildet på siden*/
+.image {
+  /*Velgr bredde*/
     width:100%;
+  /*Velger bredde*/
     height:100%;
+    /*Får bildet til å passe i ruten*/
     object-fit: cover;
-}
 
-
-.main-content-wrapper .content-wrapper {
-padding:20px 40px 20px 30px;
 }
 
 
@@ -204,12 +173,13 @@ padding:20px 40px 20px 30px;
 
     padding:10px 15px;
 }
-
-.articles-wrapper{
+  /*Velger diven "articles-wrapper" som er artikklene på høyre side*/
+  .articles-wrapper {
+    /*Gir den en plass/bokstav i griden*/
+    grid-area: A;
     display: flex;
     flex-direction:column;
     align-items:center;
-
     padding:10px;
 }
 
