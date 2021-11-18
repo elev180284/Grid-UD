@@ -1,99 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:wght@300;400;700;900&family=Pragati+Narrow:wght@400;700&family=Roboto+Mono:wght@100;200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Volkhov:wght@400;700&family=Yeseva+One&display=swap');
-
-:root{
-    font-family: 'Abril Fatface',
-    cursive;
-    font-family: 'Merriweather',
-    serif;
-    font-family: 'Pragati Narrow',
-    sans-serif;
-    font-family: 'Roboto',
-    sans-serif;
-    font-family: 'Roboto Mono',
-    monospace;
-    font-family: 'Volkhov',
-    serif;
-    font-family: 'Yeseva One',
-    cursive;
-
-    color:black;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover{
-    color: rgb(138, 179, 202);
-    /* color: rgb(159, 179, 190); */
-}
-.hover-button{
-    background-color:black;
-
-    cursor: pointer;
-}
-.hover-button:hover {
-    background-color: rgb(138, 179, 202);
-    /* background-color: rgb(159, 179, 190); */
-    ;
-}
-
-
-
+/*Her velger jeg body og html*/
 *,html,body{
-    margin:0;
-    padding:0;
-    outline:none;
-    border: none;
+  /*Margin lager plass rundt elementet*/
+    margin: 0;
+  /*Padding er mellomrommet mellom elements kant og elementets innhold*/
+    padding: 0;
+  /*Elementet blir en boks (kantene)*/
     box-sizing:border-box;
 }
 
-
-
+/*velger body*/
 body{
+  /*Endrer høyden til auto*/
     height:auto;
+  /*Endrer bakgrunnsfargen til #D7D6D4*/
     background-color:#D7D6D4;
 }
 
-.section{
-    width:100%;
-    height:100%;
-}
-
+/*Velger diven "Container"*/
 .container {
-    width: 100%;
-    height: 100%;
-
+  /*Legger på padding*/
     padding:50px 60px;
-
+    /*Under endrer jeg griden til nettsiden*/
     display: grid;
+    /*Hvordan kolonnene til griden skal være*/
+    /*Fr står for "flex"*/
     grid-template-columns: .25fr .25fr 1.25fr .5fr;
+    /*Hvordan radene i gridden skal være*/
     grid-template-rows: .75fr .75fr 2.25fr;
 
+/*Her er hvordan griden er plassert*/
     grid-template-areas:
     'L L N S'
     'Si P T A'
     'Si M M A';
 }
 
-
-.logo-wrapper {
+/*Velger diven "linje" som er linjen på toppen av nettsiden*/
+.linje {
+  /*Gir den en plass/bokstav i griden*/
     grid-area: L;
 }
 
-.Linje {
-    grid-area: S;
-}
-.social-media-wrapper {
-    grid-area: Si;
-}
-.number-wrapper {
-    grid-area: P;
-}
 .title-wrapper {
     grid-area: T;
 }
+
 .main-content-wrapper {
     grid-area: M;
 }
@@ -140,6 +91,22 @@ body{
 }
 
 .title-wrapper .title-heading{
+    /* display: block; */
+
+    font-family: 'Merriweather',
+    serif;
+    font-weight: 500;
+    font-size:60px;
+
+    margin: 15px 0 0 0px;
+    letter-spacing: 3px;
+    line-height:1;
+
+    color:black;
+}
+
+
+.tittel .tittel-heading{
     /* display: block; */
 
     font-family: 'Merriweather',
@@ -380,15 +347,15 @@ color:black;
     width: 100%;
 }
 
-.articles-wrapper .bok-wrapper .bok-block .bok {
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
+    .articles-wrapper .bok-wrapper .bok-block .bok {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
 
-    width: 100%;
+        width: 100%;
 
-    padding: 10px;
-    margin-bottom: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
 
 }
 
