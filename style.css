@@ -263,75 +263,69 @@ margin-bottom: 10px;
     margin-left: 10px;
 }
 
-
-
-    .articles-wrapper .bok-wrapper .bok-block .bok {
+/*Velger diven "bok" som er om bøkene på siden*/
+.bok {
+  /*Flex oppfører seg som et blokkelement*/
         display: flex;
-        flex-direction: row;
-        /* align-items: center; */
-
-        width: 100%;
-
+  /*Legger til padding*/
         padding: 10px;
+  /*Endrer margin på bunnen*/
         margin-bottom: 10px;
 
 }
 
-.articles-wrapper .bok-wrapper .bok-block .bok .bok-img {
+/*Velger diven "bok-img" som er bildene til bøkene på siden*/
+.bok-img {
+  /*Endrer bredden*/
     width: 50px;
+  /*Endrer høyden*/
     height: 80px;
-
+  /*Endrer margin til høyre*/
     margin-right: 20px;
-    object-fit: cover;
 }
 
-.articles-wrapper .bok-wrapper .bok-block .bok .bok-content {
-    display: flex;
-    flex-direction: column;
-
-    /* justify-content: space-between; */
-}
-
-.articles-wrapper .bok-wrapper .bok-block .bok .bok-content .bok-title {
+/*Velger diven "bok-title" som er tittelen til bøkene på siden*/
+.bok-title {
+  /*Endrer font størrelse*/
     font-size: 15px;
-    font-family: 'Roboto Mono',
-        monospace;
+    /*Endrer font type*/
+    font-family: 'Roboto Mono', monospace;
+    /*Endrer font tykkelse*/
     font-weight: 700;
-
-    /* text-align: left; */
+    /*Gjør alle bokstavene store*/
     text-transform: uppercase;
+    /*Endrer linjehøyde*/
     line-height: 1;
+    /*Endrer avstanden på bokstavene*/
     letter-spacing: 4px;
-
+    /*Endrer margin på bunnen*/
     margin-bottom: 10px;
-
+   /*Endrer tekstfargen til svart*/
     color: black;
 }
 
+/*Velger diven "bok" som er fofatteren på bøkene*/
 .bok{
+  /*Endrer font størrelse*/
     font-size: 12px;
+    /*Endrer font type*/
     font-family: 'Roboto',sans-serif;
+    /*Endrer font tykkelse*/
     font-weight: 400;
+    /*Endrer avstanden på bokstavene*/
     letter-spacing: 1px;
+    /*Endrer tekstfargen til "#0000005d" */
     color: #0000005d;
 }
 
 
-    .articles-wrapper .next-articles-wrapper {
-        padding-top: 10px;
-    }
-}
 
-
-
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
+  /*Her kommer alt som har med menyen å gjøre*/
 .sidebar {
+  /*Høyden på menyen*/
   height: 100%;
-  width: 0;
+  /*Gjemmer menyen når du ikke har trykket på knappen*/
+  width: 0%;
   position: fixed;
   z-index: 1;
   top: 0;
