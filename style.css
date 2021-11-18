@@ -125,197 +125,145 @@ body{
 }
 
 
-.main-content-wrapper .content-wrapper .content-heading{
-    font-family: 'Merriweather',
-    serif;
-    font-weight: 500;
-    font-size:30px;
 
-    letter-spacing: 3px;
-    line-height:1;
-
-    margin-bottom: 30px;
-
-    color:black;
-}
-
-
-.main-content-wrapper .content-wrapper .content-paragraph{
+.content-paragraph{
+  /*Velger font størrelse*/
     font-size:15px;
-    font-family: 'Roboto',
-    sans-serif;
+    /*Font type*/
+    font-family: 'Roboto', sans-serif;
+    /*Font tykkelse*/
     font-weight: 400;
-
-    text-align: left;
-    line-height:1.5;
+    /*Mellomrom mellom bokstavene*/
     letter-spacing: 1px;
 
-    margin-bottom: 10px;
-
-    color:black;
-}
-
-
-.main-content-wrapper .content-wrapper .content-button{
-    font-size:12px;
-    font-family: 'Roboto Mono',
-    monospace;
-    font-weight: 400;
-
-    text-align: center;
-    text-transform: uppercase;
-    line-height:1;
-    letter-spacing: 3px;
-
-    margin-top: 20px;
-
-    color:white;
-
-    padding:10px 15px;
 }
   /*Velger diven "articles-wrapper" som er artikklene på høyre side*/
   .articles-wrapper {
     /*Gir den en plass/bokstav i griden*/
     grid-area: A;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
+    /*Velger padding*/
     padding:10px;
 }
 
-.articles-wrapper .next-articles-wrapper{
-    display: flex;
-    flex-direction:column;
 
-    margin-bottom: 30px;
-    width:100%;
-}
-
-.articles-wrapper .next-articles-wrapper .next-articles-text{
+/*Velger diven "next-articles-text" som er teksten "flere artikkler" på høyre side*/
+.next-articles-text{
+  /*Velger font størrelse*/
     font-size:12px;
-    font-family: 'Roboto Mono',
-    monospace;
+      /*Font type*/
+    font-family: 'Roboto Mono',monospace;
+    /*Font tykkelse*/
     font-weight: 700;
-
-    /* text-align: left; */
+    /*Gjør alle bokstavene store*/
     text-transform: uppercase;
+    /*Endrer linje høyde*/
     line-height:1;
+      /*Mellomrom mellom bokstavene*/
     letter-spacing: 3px;
-
+    /*Endrer margin bunn*/
     margin-bottom:15px;
+    /*Endrer margin til venstre*/
     margin-left: 10px;
-
-    color:black;
 }
 
-.articles-wrapper .next-articles-wrapper .articles-block{
+/*Velger diven "article" som er artikklene på siden*/
+.article{
+  /*Flex oppfører seg som et blokkelement*/
     display: flex;
-    flex-direction:column;
-
-    /* gap:10px; */
-
-    width:100%;
-}
-
-.articles-wrapper .next-articles-wrapper .articles-block .article{
-    display: flex;
-    flex-direction: row;
+    /*Legger alt på midten*/
     align-items:center;
-
-    width: 100%;
-
+    /*Legger til padding*/
     padding:10px;
+    /*Legger til margin på bunnen*/
     margin-bottom:10px;
-
-    background-color:hsla(0, 0%, 100%, 0.2);
+    /*Lager skygge på boksene*/
     box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.1);
 }
 
-.articles-wrapper .next-articles-wrapper .articles-block .article:hover{
+/*Velger diven "article:hover" som er artikklene på siden når musen er over*/
+.article:hover{
+  /*Endrer bakgrunnsfargen til hvit*/
     background-color:#ffffff;
+    /*Gjør at boksene roterer litt når du har musen over*/
     transform: perspective(400px) rotateX(10deg);
 }
 
-.articles-wrapper .next-articles-wrapper .articles-block .article .article-img{
+/*Velger diven "article-img" som er bildene på artikklene*/
+.article-img{
+  /*Endrer bredden*/
     width: 50px;
+    /*Endrer høyden*/
     height: 50px;
-
+    /*Endrer margin til høyre*/
     margin-right: 20px;
-    object-fit: cover;
 }
 
-.articles-wrapper .next-articles-wrapper .articles-block .article .article-content{
-    display: flex;
-    flex-direction: column;
 
-    /* justify-content: space-between; */
-}
-
-.articles-wrapper .next-articles-wrapper .articles-block .article .article-content .article-title{
+/*Velger diven "article-title" som er tittlene på artikklene*/
+.article-title{
+  /*Endrer font størrelse*/
 font-size:15px;
-font-family: 'Roboto Mono',
-monospace;
+/*Endrer font type*/
+font-family: 'Roboto Mono',monospace;
+/*Endrer font tykkelse*/
 font-weight: 300;
-
-/* text-align: left; */
+/*Gjør alle bokstavene store*/
 text-transform: uppercase;
+/*Endrer linjehøyden*/
 line-height:1;
+/*Endrer avstanden på bokstavene*/
 letter-spacing: 4px;
-
+/*Endrer margin på bunnen*/
 margin-bottom: 10px;
-
-color:black;
 }
 
-.articles-wrapper .next-articles-wrapper .articles-block .article .article-content .article-date {
+/*Velger diven "article-date" som er datoen på artikklene*/
+.article-date {
+  /*Endrer font størrelse*/
     font-size:12px;
-    font-family: 'Roboto',
-    sans-serif;
+    /*Endrer font type*/
+    font-family: 'Roboto', sans-serif;
+    /*Endrer font tykkelse*/
     font-weight: 400;
-
-    /* text-align: left; */
+/*Lager stor bokstav på starten*/
     text-transform: capitalize;
+    /*Endrer linjehøyde*/
     line-height:1;
+    /*Endrer avstanden på bokstavene*/
     letter-spacing: 1px;
-
+/*Endrer fargen på teksten til "#0000005d" */
     color: #0000005d;
 }
 
-
-
-.articles-wrapper .bok-wrapper {
-    display: flex;
-    flex-direction: column;
-
+/*Velger diven "bok-wrapper" som er boksen der bøkene er*/
+.bok-wrapper {
+  /*Endrer padding*/
     padding:10px 0 0 0;
+    /*Endrer breden*/
     width: 100%;
 }
 
-.articles-wrapper .bok-wrapper .bok-text {
+/*Velger diven "bok-text" som er teksten på bøkene*/
+.bok-text {
+  /*Endrer font størrelse*/
     font-size: 12px;
-    font-family: 'Roboto Mono',
-        monospace;
+  /*Endrer font type*/
+    font-family: 'Roboto Mono', monospace;
+  /*Endrer font tykkelse*/
     font-weight: 700;
-
-    /* text-align: left; */
+  /*Gjør alle bokstavene store*/
     text-transform: uppercase;
+  /*Endrer linjehøyde*/
     line-height: 1;
+  /*Endrer avstanden på bokstavene*/
     letter-spacing: 3px;
-
+  /*Endrer margin på bunnen*/
     margin-bottom: 20px;
+    /*Endrer margin til venstre*/
     margin-left: 10px;
-
-    color: black;
 }
 
-.articles-wrapper .bok-wrapper .bok-block {
-    display: flex;
-    flex-direction: column;
 
-    /* gap:10px; */
-
-    width: 100%;
-}
 
     .articles-wrapper .bok-wrapper .bok-block .bok {
         display: flex;
